@@ -1,167 +1,187 @@
-    <div class="d-flex justify-content-center">
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+
+    <!-- slide 1 -->
+    <div class="swiper-slide">
+      <div class="d-flex justify-content-center who">
         <div class="mb-5 border-bottom border-secondary w-30">
-            <p class="h2 text-center">누가 NE<span class="yello">X</span>T와 잘 맞을까?</p>
+          <p class="h2 text-center">누가 NE<span class="yello">X</span>T와 잘 맞을까?</p>
         </div>
-    </div>
-    <div class="d-flex justify-content-around mb-3">
+      </div>
+      <div class="d-flex justify-content-around mb-3">
         <div><%= image_tag '4.06.14.png' %></div>
         <div><%= image_tag '4.05.18.png'%></div>
-    </div>
-    <div class="d-flex justify-content-around">
+      </div>
+      <div class="d-flex justify-content-around">
         <div><%= image_tag '4.06.58.png' %></div>
         <div><%= image_tag '4.06.33.png'%></div>
+      </div>
     </div>
-    <br><br><br>
-    <div class="d-flex justify-content-center">
+
+    <!-- slide 2 -->
+    <div class="swiper-slide">
+      <div class="d-flex justify-content-center">
         <div class="mt-5 border-bottom border-secondary">
-            <p class="h2 text-center">지원 조건</p>
+          <p class="h2 text-center">지원 조건</p>
         </div>
-    </div>
-    <div class="d-flex justify-content-around mt-5">
+      </div>
+      <div class="d-flex justify-content-around mt-5">
         <div style="width: 300px;">
-            <%= image_tag '3.20.35.png' %>
-        </div>
-        <div style="width: 300px;">
-            <%= image_tag '3.21.02.png'%>
+          <%= image_tag '3.20.35.png' %>
         </div>
         <div style="width: 300px;">
-            <%= image_tag '3.22.57.png'%>
+          <%= image_tag '3.21.02.png'%>
         </div>
-    </div>
-    <br><br><br><br>
-
-<div class="container">
-    <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
-      <div>
-          <h3>리크루팅 과정</h3>
+        <div style="width: 300px;">
+          <%= image_tag '3.22.57.png'%>
+        </div>
       </div>
     </div>
 
-    <div class="d-flex flex-column align-items-center" style="margin-bottom:50px;">
-    <%=image_tag "howto"%>
+    <!-- slide 3 -->
+    <div class="swiper-slide">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
+          <div>
+            <h3>리크루팅 과정</h3>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center" style="margin-bottom:50px;">
+          <%=image_tag "howto"%>
+        </div>
+
+        <div class="d-flex flex-column align-items-center", style="margin-bottom:100px;">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="width2 bg-light nav-link active"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">설명회</a>
+            </li>
+            <li class="nav-item">
+              <a class="width2 bg-light nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">서류마감</a>
+            </li>
+            <li class="nav-item">
+              <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">오픈세션</a>
+            </li>
+            <li class="nav-item">
+              <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#pt" role="tab" aria-controls="contact" aria-selected="false">심층면접</a>
+            </li>
+            <li class="nav-item">
+              <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#call" role="tab" aria-controls="contact" aria-selected="false">결과발표</a>
+            </li>
+          </ul>
+          <div class="tab-content", style="text-align: center; margin-top:50px;" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">설명회는 지원자분들의 NEXT에 대한 궁금증을 풀어드리기 위한 자리입니다.<br><br>지원자분들은 자유롭게 NEXT에 대해 질문 할 수 있습니다.<br><br>설명회에 오시면, NEXT의 전반적인 리크루팅 프로세스에 대해 알 수 있습니다.<br><br>설명회를 오지 않으시더라도 지원에 불이익은 없습니다.</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">제출 서류는 Facebook에 업로드된 지원서입니다.<br><br>지원서의 양식에 맞추어 질문에 알맞은 답변을 작성해주시면 됩니다.<br><br>지원서에 작성된 내용을 토대로 심층면접이 진행되므로,<br><br>신중하게 지원서를 작성해주시길 부탁드립니다.</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">오픈세션은 서류심사를 통과하신 분들을 대상으로 진행됩니다.<br><br>오픈세션은 신입회원 선발의 필수과정은 아니지만<br><br>NEXT를 경험하고 알아볼 수 있는 좋은 기회인만큼 지원자 분들의 참여를 권장합니다.<br><br>오픈세션은 네 시간 가량 진행되며, 지원자는 특별한 준비 없이<br><br>편안한 마음으로 오픈세션을 참관하시면 됩니다.</div>
+            <div class="tab-pane fade" id="pt" role="tabpanel" aria-labelledby="contact-tab">심층면접은 서류심사를 통과하신 분들을 대상으로 진행됩니다.<br><br>심층면접은 지원서에 표기해주신 시간대를 고려하여 양일 중 하루를 정하여 이루어집니다.<br><br>심층면접은 약 30분 동안 진행됩니다.<br><br>심층면접의 목적은 면접자가 개발자적 지식을 얼마나 함양하고 있는지 파악하는 것이 아니라,<br><br>NEXT가 지향하는 지점과 면접자가 얼마나 밀접하게 관련되는지 알아보는데 있습니다.</div>
+            <div class="tab-pane fade" id="call" role="tabpanel" aria-labelledby="contact-tab">결과발표는 면접자에게 이메일, 문자를 통해 개별적으로 전달됩니다.<br><br>공식 Facebook Page에서도 확인하실 수 있습니다.</div>
+          </div>       
+        </div>
+      </div>
     </div>
-
-    <div class="d-flex flex-column align-items-center", style="margin-bottom:100px;">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="width2 bg-light nav-link active"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">설명회</a>
-        </li>
-        <li class="nav-item">
-            <a class="width2 bg-light nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">서류마감</a>
-        </li>
-        <li class="nav-item">
-            <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">오픈세션</a>
-        </li>
-        <li class="nav-item">
-            <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#pt" role="tab" aria-controls="contact" aria-selected="false">심층면접</a>
-        </li>
-        <li class="nav-item">
-            <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#call" role="tab" aria-controls="contact" aria-selected="false">결과발표</a>
-        </li>
-        </ul>
-        <div class="tab-content", style="text-align: center; margin-top:50px;" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">설명회는 지원자분들의 NEXT에 대한 궁금증을 풀어드리기 위한 자리입니다.<br><br>지원자분들은 자유롭게 NEXT에 대해 질문 할 수 있습니다.<br><br>설명회에 오시면, NEXT의 전반적인 리크루팅 프로세스에 대해 알 수 있습니다.<br><br>설명회를 오지 않으시더라도 지원에 불이익은 없습니다.</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">제출 서류는 Facebook에 업로드된 지원서입니다.<br><br>지원서의 양식에 맞추어 질문에 알맞은 답변을 작성해주시면 됩니다.<br><br>지원서에 작성된 내용을 토대로 심층면접이 진행되므로,<br><br>신중하게 지원서를 작성해주시길 부탁드립니다.</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">오픈세션은 서류심사를 통과하신 분들을 대상으로 진행됩니다.<br><br>오픈세션은 신입회원 선발의 필수과정은 아니지만<br><br>NEXT를 경험하고 알아볼 수 있는 좋은 기회인만큼 지원자 분들의 참여를 권장합니다.<br><br>오픈세션은 네 시간 가량 진행되며, 지원자는 특별한 준비 없이<br><br>편안한 마음으로 오픈세션을 참관하시면 됩니다.</div>
-        <div class="tab-pane fade" id="pt" role="tabpanel" aria-labelledby="contact-tab">심층면접은 서류심사를 통과하신 분들을 대상으로 진행됩니다.<br><br>심층면접은 지원서에 표기해주신 시간대를 고려하여 양일 중 하루를 정하여 이루어집니다.<br><br>심층면접은 약 30분 동안 진행됩니다.<br><br>심층면접의 목적은 면접자가 개발자적 지식을 얼마나 함양하고 있는지 파악하는 것이 아니라,<br><br>NEXT가 지향하는 지점과 면접자가 얼마나 밀접하게 관련되는지 알아보는데 있습니다.</div>
-        <div class="tab-pane fade" id="call" role="tabpanel" aria-labelledby="contact-tab">결과발표는 면접자에게 이메일, 문자를 통해 개별적으로 전달됩니다.<br><br>공식 Facebook Page에서도 확인하실 수 있습니다.</div>
-        </div>        
-    </div>
-
-</div>
-
-
-
-    <div class="d-flex flex-column align-items-center", style="margin-top:100px; margin-bottom:0px">
-      <div>
+    <!-- slide 4 -->
+    <div class="swiper-slide">
+      <div class="d-flex flex-column align-items-center", style="margin-top:100px; margin-bottom:0px">
+        <div>
           <h2>Q & <span style="color:orange;">A</span></h2>
+        </div>
       </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="accordion" id="accordionExample" style="width:65%; margin:80px; border-radius:10px;">
+          <div class="heading">
+            <div class="" id="headingOne">
+              <h5 class="m-10">
+                <button class="btn btn-link text-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Q1. NEXT는 경영학과만 지원할 수 있나요?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                A1. 열정과 관심만 있다면 학과는 중요하지 않습니다.
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <div class="" id="headingTwo">
+              <h5 class="m-10">
+                <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Q2. 학번 제한이 있나요?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                A2. 학번제한 없습니다!
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <div class="" id="headingThree">
+              <h5 class="m-10">
+                <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Q3. 불합격 후 재도전 가능한가요?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                A3. 네, 가능합니다!
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <div class="" id="headingFour">
+              <h5 class="m-10">
+                <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Q4. 지원 기간은 언제인가요???
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                A4. 2월 중에 페이스북, 홈페이지로 공지합니다!
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <div class="" id="headingFive">
+              <h5 class="m-10">
+                <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Q5. 학점도 보나요...?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                A5. 학점보다는 열정과 관심이 중요합니다!!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </div>
 
-<div class="d-flex justify-content-center">
-<div class="accordion" id="accordionExample" style="width:65%; margin:80px; border-radius:10px;">
-  <div class="heading">
-    <div class="" id="headingOne">
-      <h5 class="m-10">
-        <button class="btn btn-link text-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Q1. NEXT는 경영학과만 지원할 수 있나요?
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        A1. 열정과 관심만 있다면 학과는 중요하지 않습니다.
-      </div>
-    </div>
-  </div>
-  <div class="heading">
-    <div class="" id="headingTwo">
-      <h5 class="m-10">
-        <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Q2. 학번 제한이 있나요?
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-         A2. 학번제한 없습니다!
-      </div>
-    </div>
-  </div>
-  <div class="heading">
-    <div class="" id="headingThree">
-      <h5 class="m-10">
-        <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Q3. 불합격 후 재도전 가능한가요?
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        A3. 네, 가능합니다!
-      </div>
-    </div>
-  </div>
-  <div class="heading">
-    <div class="" id="headingFour">
-      <h5 class="m-10">
-        <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Q4. 지원 기간은 언제인가요???
-        </button>
-      </h5>
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
-        A4. 2월 중에 페이스북, 홈페이지로 공지합니다!
-      </div>
-    </div>
-  </div>
-<div class="heading">
-    <div class="" id="headingFive">
-      <h5 class="m-10">
-        <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          Q5. 학점도 보나요...?
-        </button>
-      </h5>
-    </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-      <div class="card-body">
-        A5. 학점보다는 열정과 관심이 중요합니다!!
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-    <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
-      <div>
+    <!-- slide 5 -->
+    <div class="swiper-slide">
+      <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
+        <div>
           <h3>...And?</h3>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" style="height: 500px; margin:50px">
+        <div class="video-container" style="height: 100%;">
+          <object title="YouTube video player" class="youtube-player" type="text/html"  width="853" height="480"  data="//www.youtube.com/embed/hUZuOYO_BAA" allowFullScreen></object>
+        </div>
       </div>
     </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination" style="position:fixed;"></div>
+</div>    
+    
 
-<div class="d-flex justify-content-center" style="height: 500px; margin:50px">
-<div class="video-container" style="height: 100%;">
-<object title="YouTube video player" class="youtube-player" type="text/html"  width="853" height="480"  data="//www.youtube.com/embed/hUZuOYO_BAA" allowFullScreen></object>
-</div>
-</div>
+

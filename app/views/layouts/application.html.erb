@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
   </head>
 
   <body>
@@ -15,5 +16,25 @@
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          autoHeight: false,
+          height: 900,
+          speed: 300,
+        direction: 'vertical',
+        slidesPerView: 1,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        onTransitionStart: function(mySwiper) {
+          console.log("hi");
+           $('.swiper-slide').removeAttr('style');
+            $('.swiper-container').removeAttr('style');     
+        }
+    });
+    </script>
   </body>
 </html>
