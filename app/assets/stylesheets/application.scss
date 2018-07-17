@@ -1,0 +1,159 @@
+@import 'bootstrap';
+
+.image {
+
+    position:relative;
+   
+    float:left; /* optional */
+   
+   }
+   
+.image .textonimg {
+   
+    position:absolute;
+   
+    top:150px; /* in conjunction with left property, decides the text position */
+   
+    left:700px;
+   
+    width:700px; /* optional, though better have one */
+    color:white;
+   }
+   
+   
+
+.project {
+    width: 500px;
+    height: 250px;
+    background-color: red;
+    margin-top: 50px;
+}
+
+.inproject {
+    width:500px;
+    height:250px;
+    margin-left:25px;
+}
+
+.inproject2 {
+    width:500px;
+    height:250px;
+    padding-right:25px;
+}
+
+//activities.html.erb
+HTML  CSS   Result
+Edit on 
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+   border:2px solid rgba(0,0,0,0) !important;
+}
+
+.text {
+    display:table-cell; 
+    text-align:center; 
+    vertical-align:middle;
+}
+
+
+.width {
+    width: 550px;
+    
+    border-radius: 10px;
+}
+.width2{
+    width: 145px;
+    text-align: center;
+    color: black;
+    }
+
+/* front pane, placed above back */
+.front{
+  z-index:2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  
+  background-size:100% 100%;
+}
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: red;
+    background-size:100% 100%;
+    color: white;
+    text-align: center;
+    display:table;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 200px;
+    height: 200px;
+   /*border:1px solid lightgray;*/
+}
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+   /* 하위요소에 3D 좌표값 지정 */
+    transform-style: preserve-3d;
+    position: relative;
+}
+/* hide back of pane during swap */
+.front, .back{
+  position: absolute;
+  backface-visibility:hidden;
+}
+
+// member.html.erb
+.member_img {
+    width: 180px;
+    height:180px;
+    border-radius: 100%;
+}
+
+.tag {
+    margin: 100px 100px 100px 30px;
+
+}
+
+.tag:hover {
+    transition:all 0.3s ease;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.tag2 {
+    margin: 100px 100px 100px 30px;
+}
+
+.tag2:hover{
+    transition:all 0.3s ease;
+    -webkit-transform: rotateZ(-20deg);
+    -ms-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+}
+
+.memberText {
+    margin: 40px 0 0 30px;
+}
+
+.memberName {
+    margin: 0 0 20px 0;
+    font-size: 1.3rem;
+}
+
+.hide {
+    display: none !important;
+}
+
+// recruit.html.erb
+
+div.heading {
+    margin-bottom: 20px;
+}
