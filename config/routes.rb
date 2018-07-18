@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   get "edit_notice/:id" => "posts#edit_notice", as: 'edit_post_notice'
 
-  devise_for :users
+  devise_for :users, controllers: {
+    sessions: 'users/sessions'
+  }
 
   root "home#index"
 
