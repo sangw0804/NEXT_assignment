@@ -1,6 +1,70 @@
 @import 'bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+
+.recruit1 {
+    background: image-url('recruit1.jpg');
+    background-size: 100% auto;
+  }
+
+.recruit2 {
+    background: image-url('recruit2.jpg');
+    background-size: 100% auto;
+  }
+
+.recruit3 {
+    background: image-url('recruit3.jpg');
+    background-size: 100% auto;
+  }
+
+.recruit4 {
+    background: image-url('recruit4.jpg');
+    background-size: 100% auto;
+  }
+
+.contact {
+    background: image-url('about1.jpg');
+    background-size: 100% auto;
+  }
+
+
+
+.activities1 {
+    background: image-url('activities1.jpg');
+    background-size: 100% auto;
+  }
+
+.activities2 {
+    background: image-url('activities2.jpg');
+    background-size: 100% auto;
+  }
+
+.activities3 {
+    background: image-url('activities3.jpg');
+    background-size: 100% auto;
+  }
+
+.activities4 {
+    background: image-url('activities4.jpg');
+    background-size: 100% auto;
+  }
+
+.activities5 {
+    background: image-url('mission.jpg');
+    background-size: 100% auto;
+  }
+
+.about1 {
+    background: image-url('about1.jpg');
+    background-size: 100% auto;
+  }
+
+.about2 {
+    background: image-url('about2.jpg');
+    background-size: 100% auto;
+  }
+
+
 .notice{
     margin: 0px;
 }
@@ -31,76 +95,11 @@
     color:black;
 }
 
-// test
-
-.flip-container {
-    perspective: 1000px;
-   border:2px solid rgba(0,0,0,0) !important;
-}
-.front{
-  z-index:2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
-  
-  background-size:100% 100%;
-}
-/* back, initially hidden pane */
-.back {
-    transform: rotateY(180deg);
-    background-color: red;
-    background-size:100% 100%;
-    color: white;
-    text-align: center;
-    display:table;
-}
-
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
-}
-
-.flip-container, .front, .back {
-    width: 200px;
-    height: 200px;
-   /*border:1px solid lightgray;*/
-}
-/* flip speed goes here */
-.flipper {
-    transition: 0.6s;
-   /* 하위요소에 3D 좌표값 지정 */
-    transform-style: preserve-3d;
-    position: relative;
-}
-/* hide back of pane during swap */
-.front, .back{
-  position: absolute;
-  backface-visibility:hidden;
-}
-
 .text {
     display:table-cell; 
     text-align:center; 
     vertical-align:middle;
 }
-.image {
-
-    position:relative;
-   
-    float:left; /* optional */
-   
-   }
-   
-.image .textonimg {
-   
-    position:absolute;
-   
-    top:150px; /* in conjunction with left property, decides the text position */
-   
-    left:700px;
-   
-    width:700px; /* optional, though better have one */
-    color:white;
-   }
    
    
 

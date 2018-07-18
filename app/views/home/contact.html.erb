@@ -1,43 +1,43 @@
 
-
-<div class="d-flex flex-low justify-content-center">
-    <div id="contactContainer" class="d-flex flex-column justify-content-around align-items-center" style="height:800px">
-        <%= image_tag "temp_logo.jpeg", style:"width:200px",id: "logo" %>
-        <div style="font-size:1.3rem; border-bottom: 1px solid gray; padding-bottom:13px" >궁금한 점 또는 협력에 관하여 문의할 점이 있다면 연락주세요!</div>
-        <div>next@gmail.com</div>
-        <div>facebook.com/kulikelion</div>
-        <div>회장 안운장: 010-3130-1934</div>
-        <div>부회장 심건우: 010-3897-9967</div>
-        <div id="map" style="height:400px; width:90%;border-radius:15px"></div>
+<div class="contact">
+    <div class="d-flex flex-low justify-content-center">
+        <div id="contactContainer" class="d-flex flex-column justify-content-around align-items-center" style="height:800px">
+            <div style="font-size:1.3rem; border-bottom: 1px solid gray; padding-bottom:13px" >궁금한 점 또는 협력에 관하여 문의할 점이 있다면 연락주세요!</div>
+            <div>next@gmail.com</div>
+            <div>facebook.com/kulikelion</div>
+            <div>회장 안운장: 010-3130-1934</div>
+            <div>부회장 심건우: 010-3897-9967</div>
+            <div id="map" style="height:400px; width:90%;border-radius:15px"></div>
+        </div>
     </div>
 </div>
 
+        <!--The div element for the map -->
+        
+        <script>
+        $("#logo").hide().fadeIn(2000);
+    function initMap() {
+    // The location of Uluru
+    var kuKyungBon = {lat: 37.590718, lng: 127.034961};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 17, center: kuKyungBon});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: kuKyungBon, map: map});
 
-    <!--The div element for the map -->
+
+    var infowindow = new google.maps.InfoWindow({
+        content: "NE<span style='color:orange;'>X</span>T"
+    });
+        infowindow.open(map, marker);
+    }
     
-    <script>
-    $("#logo").hide().fadeIn(2000);
-function initMap() {
-  // The location of Uluru
-  var kuKyungBon = {lat: 37.590718, lng: 127.034961};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 17, center: kuKyungBon});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: kuKyungBon, map: map});
-
-
-  var infowindow = new google.maps.InfoWindow({
-    content: "NE<span style='color:orange;'>X</span>T"
-  });
-    infowindow.open(map, marker);
-}
-    </script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWGLRafdjTCcmWEUt-tzzjQtY3-6eyqK8&callback=initMap">
-    </script>
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWGLRafdjTCcmWEUt-tzzjQtY3-6eyqK8&callback=initMap">
+        </script>
