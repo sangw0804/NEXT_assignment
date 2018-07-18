@@ -1,47 +1,58 @@
-<div class= "d-flex flex-column align-items-center py-5">
+<div class= "d-flex flex-column align-items-center py-5 bg-dark text-white-50" style="height: 1000px;">
 <p id="notice"><%= notice %></p>
-  <p><strong>제목:</strong>
-  <%= @post.title %>
-
-  <strong>작성자:</strong>
-  <%= @post.user.name %>
-</p>
+  <div class="row justify-content-between border-bottom mt-5" style="width: 500px;">
+    <div class="col-4">
+    <h5>
+      <strong>Title </strong>
+      <%= @post.title %>
+    </h5>
+    </div>
+    <div class="col-4">
+      <%= @post.user.name %>
+    </div>
+  </div>
 <hr>
 <br>
-<p>
-  <%= @post.content %>
-</p>
+  <div class="border-bottom" style="width: 500px;">
+    <p>
+      <%= @post.content %>
+    </p>
+  </div>
 
-<table class="table">
-<thead>
-    <tr>
-      <th scope="col">댓글</th>
-      <th>댓글 작성자</th>
-      <th>액션</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-<tbody>
-<tr>
-  <% @post.comments.each do |comment| %>
-    <td><%= comment.content %></td>
-    <td><%= comment.user.name %></td>
-    <td><%= link_to "삭제", post_comment_path(@post.id, comment.id), method: :delete %></td>
-    <br>
-    </tr>
-  <% end %>
-</tbody>
+<table class="table table-borderless mb-5" style="width: 500px;">
+  <%# <thead>
+      <tr>
+        <th scope="col">Comment</th>
+        <th>Name</th>
+        <th></th>
+        <th colspan="3"></th>
+      </tr>
+    </thead> %>
+  <tbody>
+  <tr>
+    <% i = 0 %>
+    <% @post.comments.each do |comment| %>
+      <td>( <%= i = i + 1 %> )</td>
+      <td><%= comment.content %></td>
+      <td><%= comment.user.name %></td>
+      <td><%= link_to "delete", post_comment_path(@post.id, comment.id), method: :delete, class: "text-warning" %></td>
+      <br>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <div>
   <%= form_for Comment.new, url: post_comments_path(@post.id) do |f|%>
-    <%= f.label "댓글"%>
+    <%= f.label "Comment", class: "text-white" %>
     <%= f.text_field :content %>
     <%= f.hidden_field :user_id, value: current_user.id %>
-    <%= f.submit "작성", class: "btn btn-warning"%>
+    <%= f.submit "작성", class: "btn btn-outline-light text-white", style: "padding-top: 6px;"%>
   <% end%>
 </div>
 <br>
-<p><%= link_to '편집', edit_post_path(@post), class: "btn btn-primary" %>
-<%= link_to '뒤로가기', posts_path, class: "btn btn-secondary" %></p>
+<p>
+<%= link_to 'back', posts_path, class: "btn btn-outline-light text-white",style: "padding-top: 6px;" %>
+<%= link_to 'edit', edit_post_path(@post), class: "btn btn-outline-light text-white", style: "padding-top: 6px;" %>
+<%= link_to 'delete', notice, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-light text-white", style: "padding-top: 6px;" %></p>
 </div>
