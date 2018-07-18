@@ -242,3 +242,22 @@ div.heading {
 div.who {
     padding-top: 200px;
 }
+
+
+// swiper css
+.swiper-pagination {
+    position: fixed !important;
+    margin-right: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 2px !important;
+    height: 6vh !important;
+    margin: 2vh 0 !important;
+    display: block !important;
+    background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f6921e !important;
+}
