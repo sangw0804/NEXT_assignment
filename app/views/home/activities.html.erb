@@ -1,13 +1,13 @@
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js">
 </script>
-<div class="swiper-container">
+<div class="swiper-container" style="color:white" >
     <div class="swiper-wrapper">
         <!--slide1 -->
         <div class="swiper-slide activities1">
             <!--div 멋사 성장법칙 제목 --> 
-            <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
+            <div class="d-flex flex-column align-items-center", style="margin-top:160px; margin-bottom:50px;">
             <div>
-            <h3>NEXT 성장법칙</h3>
+            <h3 style="font-size:35pt">Session And  Project</h3>
             </div>
             </div>
             <!--div /멋사 성장법칙 제목 --> 
@@ -19,7 +19,7 @@
                 <div class="flip-container", ontouchstart="this.classList.toggle('hover');">
                     <div class="flipper">
                         <div class="front">
-                        <%=image_tag "session"%>
+                        <%=image_tag "plz4", height:"200", width:"200"%>
                         </div>
                         <div class="back">
                         <span class="text">HTML, CSS, ROR, JS를 포함한 웹 개발자로서의 기본 역량 증진</span>
@@ -27,14 +27,14 @@
                     </div>
                 </div>
 
-                <div>
-                <%=image_tag "challenge"%>
+                <div style="margin-top:15px; margin-right:95px; margin-left:95px;">
+                <h1 style="font-size:100pt">&<h1>
                 </div>
 
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                     <div class="flipper">
                         <div class="front">
-                        <%=image_tag "project"%>
+                        <%=image_tag "plz5", height:"200", width:"200"%>
                         </div>
                         <div class="back">
                         <span class="text">실전 프로젝트 도전을 통한 역량확인 및 실전 경험</span>
@@ -46,9 +46,9 @@
            
             <!-- /div Session and Project -->
             <!-- div Session-Project 설명 -->
-            <div class="d-flex flex-column align-items-center", style="margin-top:20px; margin-bottom:50px">
+            <div class="d-flex flex-column align-items-center", style="margin-top:30px; margin-bottom:50px">
             <div style="display:table; ">
-            <span style="display:table-cell; text-align:center; vertical-align:middle;">역량향상, 도전, 실패, 보완, 그리고 재도전.<br>어쩌면 끝나지 않을 성장과정을 시작합니다.<br>성장을 거치며 얻게 될 영광의 순간들은 덤입니다.<br>NEXT는 끊임 없는 실패와 경험이<br> 배움의 가장 빠른 방법이라고 믿습니다.</span>
+            <span style="display:table-cell; text-align:center; vertical-align:middle; font-size:15pt">역량향상, 도전, 실패, 보완, 그리고 재도전.<br>어쩌면 끝나지 않을 성장과정을 시작합니다.<br>성장을 거치며 얻게 될 영광의 순간들은 덤입니다.<br>NEXT는 끊임 없는 실패와 경험이<br> 배움의 가장 빠른 방법이라고 믿습니다.</span>
             </div>
             </div>
             <!-- /div Session-Project 설명-->
@@ -60,14 +60,14 @@
             
             <div class ="container">
                 <!-- 정규 세션 -->   
-                <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
+                <div class="d-flex flex-column align-items-center", style="margin-top:150px; margin-bottom:50px">
                     <div>
-                    <h3>정규 세션</h3>
+                    <h3 style="font-size:30pt">Standard Session</h3>
                     </div>
                 </div>
                 <div class="d-flex flex-column align-items-center", style="margin-top:20px; margin-bottom:50px">
                     <div style="display:table; ">
-                        <span style="display:table-cell; text-align:center; vertical-align:middle;">매주 화, 목 3시간씩 진행되는 정규세션<br><br>기본적인 개발관련 배경지식과 웹 프로그래머로써 필요한 언어 및 프레임워크에 대한 수업을 진행합니다   </span>
+                        <span style="display:table-cell; text-align:center; vertical-align:middle; font-size:15pt">매주 화, 목 3시간씩 진행되는 정규세션<br><br>기본적인 개발관련 배경지식과 웹 프로그래머로써 필요한<br><br> 언어 및 프레임워크에 대한 수업을 진행합니다   </span>
                     </div>
                 </div>
                 <div class="d-flex d-flex justify-content-around">   
@@ -84,7 +84,7 @@
                     <div class="flip-container", ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
-                            <img src="https://www.chicagocomputerclasses.com/wp-content/uploads/2014/04/css31.jpg",height="200" width="200">
+                            <%=image_tag "css", height:"200", width:"150"%>
                             </div>
                             <div class="back">
                             <span class="text">웹페이지를 아름답게 하는, CSS</span>
@@ -94,7 +94,7 @@
                     <div class="flip-container", ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7aUineO4lGn0WC6DOo1ILR2M9bkX7wGAa1_NpDmSc05VZfN6O0w",height="200" width="200">
+                            <%=image_tag "ror", height:"220", width:"170"%>
                             </div>
                             <div class="back">
                             <span class="text">쉽고 빠른 프로토타이핑을 위하여, ROR</span>
@@ -104,7 +104,7 @@
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
-                            <img src="https://t1.daumcdn.net/cfile/tistory/2166A64D57B3C49D23",height="200" width="200">
+                            <img src="https://t1.daumcdn.net/cfile/tistory/2166A64D57B3C49D23",height="220" width="220">
                             </div>
                             <div class="back">
                             <span class="text">동적 페이지를 만들어주는, JS</span>
@@ -118,21 +118,21 @@
         <div class="swiper-slide activities3">
             <div class ="container">
                 <!-- 특별 세션 -->   
-                <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
+                <div class="d-flex flex-column align-items-center", style="margin-top:160px; margin-bottom:50px">
                 <div>
-                <h3>특별 세션</h3>
+                <h3 style="font-size:30pt">Special Session</h3>
                 </div>
                 </div>
                 <div class="d-flex flex-column align-items-center", style="margin-top:20px; margin-bottom:50px">
                 <div style="display:table; ">
-                <span style="display:table-cell; text-align:center; vertical-align:middle;">NEXT는 하나의 길만을 제공하지 않습니다<br><br>개발, 창업, 프로젝트 등 다양한 경험을 가진 멘티들의 주도로<br><br>NEXT 인원 각각에게 가장 필요한 특별 세션을 진행합니다.</span>
+                <span style="display:table-cell; text-align:center; vertical-align:middle; font-size:15pt">NEXT는 하나의 길만을 제공하지 않습니다<br><br>개발, 창업, 프로젝트 등 다양한 경험을 가진 멘티들의 주도로<br><br>NEXT 인원 각각에게 가장 필요한 특별 세션을 진행합니다.</span>
                 </div>
                 </div>
                 <div class="d-flex d-flex justify-content-around" style="margin-bottom:100px;" >   
                     <div class="flip-container", ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
-                            <img src="https://cdn3.iconfinder.com/data/icons/web-design-and-development-glyph-vol-1/64/web-development-glyph-04-512.png",height="200" width="200">
+                            <%=image_tag "program", height:"200", width:"200"%>
                             </div>
                             <div class="back">
                             <span class="text">개발자 트랙</span>
@@ -142,7 +142,7 @@
                     <div class="flip-container", ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
-                            <img src="https://previews.123rf.com/images/honzahruby/honzahruby1407/honzahruby140700110/30312655-flat-design-startup-and-handshake-business-icon.jpg",height="200" width="200">
+                            <%=image_tag "money", height:"200", width:"200"%>
                             </div>
                             <div class="back">
                             <span class="text">창업 트랙</span>
@@ -152,7 +152,7 @@
                     <div class="flip-container", ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
-                            <img src="https://cdn1.iconfinder.com/data/icons/business-bicolor-4/512/presentation-512.png",height="200" width="200">
+                            <%=image_tag "gogo", height:"200", width:"200"%>
                             </div>
                             <div class="back">
                             <span class="text">프로젝트 트랙</span>
@@ -162,7 +162,7 @@
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                         <div class="flipper">
                             <div class="front">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXFLLb5Uj7oXili57EmOjHE7rseSa_B_i_ro9XdwV8_ZCNq7HNw",height="200" width="200">
+                            <%=image_tag "python", height:"200", width:"200"%>
                             </div>
                             <div class="back">
                             <span class="text">프로그래밍 언어<br>수평적 확장</span>
@@ -178,14 +178,14 @@
                 
             <!-- div Project-->
         <div class="swiper-slide activities4">    
-            <div class="container">  
+            <div class="container" style="margin-top:80px">  
                 <div class="d-flex d-flex justify-content-around">
                     <div class="project"> 
                     <img src="http://dku.likelion.org/image/%ED%95%B4%EC%BB%A4%ED%86%A4.jpg", height="250" width="500">
                     </div>
                     <div class="project" > 
                         <div class ="inproject" style="color: white; text-align:left; display:table">
-                            <span style="display:table-cell; vertical-align:middle;">해커톤<br><br><br>정해진 시간 내에 프로그래밍을 완료해야 하는 해커톤은<br> 학회원의 역량을 실전에 적용할 수 있는 좋은 기회입니다. <br>중앙 해커톤뿐 아니라 자체적으로도 해커톤을 개최하고, <br>외부 대회의 참여도 독려하고 있습니다. </span>
+                            <span style="display:table-cell; vertical-align:middle;"><font size="25pt">Hackerthon</font><br><br>정해진 시간 내에 프로그래밍을 완료해야 하는 해커톤은<br> 학회원의 역량을 실전에 적용할 수 있는 좋은 기회입니다. <br>중앙 해커톤뿐 아니라 자체적으로도 해커톤을 개최하고, <br>외부 대회의 참여도 독려하고 있습니다. </span>
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                 <div class="d-flex d-flex justify-content-around">
                     <div class="project">
                         <div class="inproject2" style="color: white; text-align:right; display:table"> 
-                            <span style="display:table-cell; vertical-align:middle;">아이디어톤<br><br><br>창업자 및 창업준비생이 팀으로써 함께 하여<br> 자신의 아이디어를 비즈니스로 디벨롭합니다. <br>창업자의 경우 창업에 필요한 인원을 모으고, <br>사업 아이디어에 관한 피드백을 얻을 수 있는 기회입니다.<br> 또한 창업준비생들을 위한 네트워킹을 제공합니다.</span>
+                            <span style="display:table-cell; vertical-align:middle;"><font size="25pt">Ideathon</font><br><br>창업자 및 창업준비생이 팀으로써 함께 하여<br> 자신의 아이디어를 비즈니스로 디벨롭합니다. <br>창업자의 경우 창업에 필요한 인원을 모으고, <br>사업 아이디어에 관한 피드백을 얻을 수 있는 기회입니다.<br> 또한 창업준비생들을 위한 네트워킹을 제공합니다.</span>
                         </div>
                     </div>  
                     <div class="project"> 

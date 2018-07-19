@@ -150,15 +150,6 @@
   }
 
 
-.mainbtn{
-    padding-top: 20px;
-    color:white;
-}
-
-.btn{
-    padding-top: 20px;
-    color:black;
-}
 
 .recruitment-container{
     margin: 0px;
@@ -188,7 +179,7 @@
 .project {
     width: 500px;
     height: 250px;
-    background-color: red;
+    
     margin-top: 50px;
 }
 
@@ -243,7 +234,7 @@ Edit on
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
-    background-color: red;
+    
     background-size:100% 100%;
     color: white;
     text-align: center;
@@ -350,4 +341,22 @@ div.who {
     margin-bottom: 200px;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 50px;
+}
+
+// swiper css
+.swiper-pagination {
+    position: fixed !important;
+    margin-right: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 2px !important;
+    height: 6vh !important;
+    margin: 2vh 0 !important;
+    display: block !important;
+    background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f6921e !important;
 }
