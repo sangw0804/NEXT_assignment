@@ -105,7 +105,7 @@
     background-color: rgba(0, 0, 0, 0.9);;
 }
 .index_text {
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 100px;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 50px;
@@ -257,7 +257,7 @@ Edit on
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
-    
+    font-weight: bold;
     background-size:100% 100%;
     color: white;
     text-align: center;
@@ -393,4 +393,7 @@ div.tab-pane {
 
 .swiper-pagination-bullet-active {
     background: #f6921e !important;
+}
+.line {
+    padding-bottom: 50px;
 }
