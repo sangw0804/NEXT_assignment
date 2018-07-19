@@ -9,12 +9,12 @@
         </div>
       </div>
       <div class="d-flex justify-content-around mb-3">
-        <div><%= image_tag '4.06.14.png' %></div>
-        <div><%= image_tag '4.05.18.png'%></div>
+        <div><%= image_tag '4.06.14.png', style:"width:500px;border-radius:5px;margin-left:100px" %></div>
+        <div><%= image_tag '4.05.18.png', style:"width:500px;border-radius:5px;margin-right:100px"%></div>
       </div>
       <div class="d-flex justify-content-around">
-        <div><%= image_tag '4.06.58.png' %></div>
-        <div><%= image_tag '4.06.33.png'%></div>
+        <div><%= image_tag '4.06.58.png', style:"width:500px;border-radius:5px;margin-left:100px" %></div>
+        <div><%= image_tag '4.06.33.png', style:"width:500px;border-radius:5px;margin-right:100px"%></div>
       </div>
     </div>
 
@@ -40,18 +40,18 @@
 
     <!-- slide 3 -->
     <div class="swiper-slide recruit3">
-      <div class="container">
-        <div class="d-flex flex-column align-items-center", style="margin-top:60px; margin-bottom:50px">
+      <div class="container" style="margin-top:70px">
+        <div class="d-flex flex-column align-items-center", style="margin-top:70px; margin-bottom:30px">
           <div>
-            <h3>리크루팅 과정</h3>
+            <h3 class="border-bottom border-secondary" style="padding-bottom:0.5rem;">리크루팅 과정</h3>
           </div>
         </div>
 
-        <div class="d-flex flex-row align-items-center justify-content-between" style="margin-bottom:50px;margin-right: 310px;margin-left: 310px;">
-          <%= image_tag "personIcon.png", style: "height:50px;width:50px" %>
-          <%= image_tag "bookIcon.png", style: "height:50px;width:50px" %>
-          <%= image_tag "interview.png", style: "height:50px;width:50px" %>
-          <%= image_tag "phoneIcon.png", style: "height:50px;width:50px" %>
+        <div class="d-flex flex-row align-items-center justify-content-between icons" style="margin-bottom:50px;margin-right: 310px;margin-left: 310px;">
+          <%= image_tag "personIcon.png", style: "height:50px;width:50px;opacity:0.5;border-radius:10px;padding:5px", id:"person",class:"colored" %>
+          <%= image_tag "bookIcon.png", style: "height:50px;width:50px;opacity:0.5;border-radius:10px;padding:5px", id:"book" %>
+          <%= image_tag "interview.png", style: "height:50px;width:50px;opacity:0.5;border-radius:10px;padding:5px", id: "interview" %>
+          <%= image_tag "phoneIcon.png", style: "height:50px;width:50px;opacity:0.5;border-radius:10px;padding:5px", id:"phone" %>
         </div>
 
         <div class="d-flex flex-column align-items-center", style="margin-bottom:100px;">
@@ -69,7 +69,7 @@
               <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#pt" role="tab" aria-controls="contact" aria-selected="false">심층면접</a>
             </li>
             <li class="nav-item">
-              <a class="width2 bg-light nav-link" id="contact-tab" data-toggle="tab" href="#call" role="tab" aria-controls="contact" aria-selected="false">결과발표</a>
+              <a class="width2 bg-light nav-link" id="contact2-tab" data-toggle="tab" href="#call" role="tab" aria-controls="contact" aria-selected="false">결과발표</a>
             </li>
           </ul>
           <div class="tab-content", style="text-align: center; margin-top:50px;" id="myTabContent">
@@ -190,10 +190,36 @@
 .h2, h2, h3 {
   color: white;
 }
+.colored {
+  background: orange;
+}
+div.card-body {
+  color : orange;
+}
+button.btn-link {
+  color: white;
+}
 </style>
 
 <script>
 $("li.nav-item").click(function(e){
-  console.log(e);
+  $("div.icons>img").removeAttr("class");
+  switch (e.target.id) {
+    case "home-tab":
+      $("img#person").attr("class", "colored");
+      break;
+    case "profile-tab":
+      $("img#book").attr("class", "colored");
+      break;
+    case "contact-tab":
+      $("img#interview").attr("class", "colored");
+      break;
+    case "contact2-tab":
+      $("img#phone").attr("class", "colored");
+      break;
+    default:
+      break;
+  }
+  
 });
 </script>

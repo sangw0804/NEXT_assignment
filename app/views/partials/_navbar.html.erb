@@ -1,29 +1,33 @@
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-blue bg-transparent ">
+<nav class="navbar fixed-top navbar-expand-lg bg-transparent navbar1 ">
+
+  <div class="navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav h5">
+        <li class="nav-item">  
+        <%= link_to 'NEXT', index_path, class: "nav-link"%>
+        </li>
+  </div>
 
   <div class="navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav h3 ">
-      <li class="nav-item">  
-      <%= link_to 'Index', index_path, class: "nav-link"%>
+    <ul class="navbar-nav h5 ">
+      <li class="nav-item nav-item1">
+        <%= link_to 'ABOUT', about_path, class: "nav-link"%>
       </li>
-      <li class="nav-item">
-        <%= link_to 'About', about_path, class: "nav-link"%>
+      <li class="nav-item nav-item1">
+        <%= link_to 'ACTIVITIES', activities_path, class: "nav-link"%>
       </li>
-      <li class="nav-item">
-        <%= link_to 'Activities', activities_path, class: "nav-link"%>
+      <li class="nav-item nav-item1">
+        <%= link_to 'RECRUIT', recruit_path, class: "nav-link"%>
       </li>
-      <li class="nav-item">
-        <%= link_to 'Recruit', recruit_path, class: "nav-link"%>
-      </li>
-      <li class="nav-item">
-        <%= link_to 'Contact', contact_path, class: "nav-link"%>
-      </li>
-      <li class="nav-item">
-        <%= link_to 'Members', members_path, class: "nav-link"%>
+      <li class="nav-item nav-item1">
+        <%= link_to 'MEMBERS', members_path, class: "nav-link"%>
       </li>
         <% changedPath = (user_signed_in?) ? posts_path : new_user_session_path %>
-      <li class="nav-item">
-        <%= link_to 'Member Lounge', changedPath, class: "nav-link"%>
+      <li class="nav-item nav-item1">
+        <%= link_to 'MEMBER LOUNGE', changedPath, class: "nav-link"%>
+      </li>
+      <li class="nav-item nav-item1">
+       <%= link_to image_tag("phonelogo.png", alt: "contact"), contact_path, class: "nav-link" %>
       </li>
 
       <% if user_signed_in? %>
