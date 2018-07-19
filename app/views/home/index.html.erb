@@ -7,6 +7,7 @@
         </ol>
         <div class="carousel-inner carousel-size">
             <div class="carousel-item active">
+<<<<<<< HEAD
                 <%=image_tag("forindex1.jpg", class: "d-block w-100 h-100")%> 
                     <div class="carousel-caption d-none d-md-block">
                         
@@ -17,6 +18,12 @@
                     <div class="carousel-caption d-none d-md-block">
                         
                     </div>
+=======
+                <%=image_tag("forindex1.jpeg", class: "d-block w-100 h-100")%> 
+            </div>
+            <div class="carousel-item">
+                <%=image_tag("forindex2.jpg", class: "d-block w-100 h-100")%> 
+>>>>>>> d3bee4a1aa15dac6e993f1d4d545103881074820
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -127,14 +134,15 @@
         <br>
         <div class="index_contact d-flex justify-content-center align-items-center flex-column">
             <div class="row index_text1">
-                <div class="col">
+                <div class="col index_contact_col">
+                 <%=image_tag 'personlogo.png', size: "30x30"%>
                 회장: 안운장
                 </div>
-                <div class="col">
-                next@gmail.com
+                <div class="col index_contact_col">
+                <%=image_tag 'maillogo.png', size: "25x20"%> <span class:"contact_final_margin">next@gmail.com</span>
                 </div>
-                <div class="col">
-                facebook.com/kulikelion
+                <div class="col index_contact_col">
+                <%=image_tag 'facebooklogo.png', size: "20x20"%> <span class:"contact_final_margin">facebook.com/kulikelion</span>
                 </div>
             </div>
         </div>
