@@ -1,4 +1,4 @@
-<div class= "d-flex flex-column align-items-center py-5 bg-dark text-white-50" style="height: 1000px;">
+<div class= "d-flex flex-column align-items-center py-5 bg-dark text-white members" style="height: 1000px;">
 <p id="notice"><%= notice %></p>
   <div class="row justify-content-between border-bottom mt-5" style="width: 500px;">
     <div class="col-4">
@@ -20,19 +20,11 @@
   </div>
 
 <table class="table table-borderless mb-5" style="width: 500px;">
-  <%# <thead>
-      <tr>
-        <th scope="col">Comment</th>
-        <th>Name</th>
-        <th></th>
-        <th colspan="3"></th>
-      </tr>
-    </thead> %>
   <tbody>
   <tr>
     <% i = 0 %>
     <% @post.comments.each do |comment| %>
-      <td>( <%= i = i + 1 %> )</td>
+      <td><span class="badge badge-pill badge-warning"><%= i = i + 1 %></span></td>
       <td><%= comment.content %></td>
       <td><%= comment.user.name %></td>
       <td><%= link_to "delete", post_comment_path(@post.id, comment.id), method: :delete, class: "text-warning" %></td>
@@ -47,12 +39,12 @@
     <%= f.label "Comment", class: "text-white" %>
     <%= f.text_field :content %>
     <%= f.hidden_field :user_id, value: current_user.id %>
-    <%= f.submit "작성", class: "btn btn-outline-light text-white", style: "padding-top: 6px;"%>
+    <%= f.submit "작성", class: "btn btn-outline-warning text-white", style: "padding-top: 6px;"%>
   <% end%>
 </div>
 <br>
 <p>
-<%= link_to 'back', posts_path, class: "btn btn-outline-light text-white",style: "padding-top: 6px;" %>
-<%= link_to 'edit', edit_post_path(@post), class: "btn btn-outline-light text-white", style: "padding-top: 6px;" %>
-<%= link_to 'delete', notice, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-light text-white", style: "padding-top: 6px;" %></p>
+<%= link_to 'back', posts_path, class: "btn btn-outline-warning text-white",style: "padding-top: 6px;" %>
+<%= link_to 'edit', edit_post_path(@post), class: "btn btn-outline-warning text-white", style: "padding-top: 6px;" %>
+<%= link_to 'delete', notice, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-warning text-white", style: "padding-top: 6px;" %></p>
 </div>

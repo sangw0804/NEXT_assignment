@@ -1,6 +1,6 @@
-<div class= "d-flex flex-column align-items-center py-5 bg-dark" style="height: 1000px;">
+<div class= "d-flex flex-column align-items-center py-5 contact" style="height: 1000px;">
 <p id="notice"><%= notice %></p>
-<h1 class="text-white">L o u n g e</h1>
+<h1 class="text-white">L O U N G E</h1>
 
 <div>
   <table class="table table-borderless table-hover mt-5" style="width: 500px;">
@@ -12,7 +12,7 @@
       </tr>
     </thead>
 
-    <tbody class="border-bottom">
+    <tbody class="border-bottom text-secondary">
       <% @notices.each do |notice| %>
         <tr>
           <td><%= link_to notice.title, notice, class:"text-warning" %></td>
@@ -21,7 +21,7 @@
         </tr>
       <% end %>
     </tbody>  
-    <tbody >
+    <tbody class="text-secondary">
       <% @posts.each do |post| %>
         <tr>
           <td><%= link_to post.title, post, class:"text-white" %></td>
@@ -39,11 +39,11 @@
 <%= form_tag search_path, method: :get do %>
   <%= select_tag("search[select]", options_for_select([["제목","title"],["작성자 이름","name"],["작성자 이메일","email"]],"title" )) %>
   <%= text_field_tag "search[q]" %>
-  <%= submit_tag("SEARCH", class:"btn btn-outline-light text-white", style: "padding-top: 6px;") %>
+  <%= submit_tag("SEARCH", class:"btn btn-outline-warning text-white", style: "padding-top: 6px;") %>
 <% end %>
 </div>
 
-<div><%= link_to('WRITE', new_post_path, class: "btn btn-outline-light text-white", style: "padding-top: 6px;") %> 
-<%= link_to('NOTICE', new_post_notice_path, class: "btn btn-outline-light text-white", style: "padding-top: 6px;")%></div>
+<div><%= link_to('WRITE', new_post_path, class: "btn btn-outline-warning text-white", style: "padding-top: 6px;") %> 
+<%= link_to('NOTICE', new_post_notice_path, class: "btn btn-outline-warning text-white", style: "padding-top: 6px;")%></div>
 </div>
 
