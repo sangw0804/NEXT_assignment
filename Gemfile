@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'omniauth-facebook'
+gem 'figaro'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'rails_db', '~> 2.0', '>= 2.0.3'

@@ -13,7 +13,7 @@ class User < ApplicationRecord
       user
     else
       token = Devise.friendly_token[0,20]
-      User.create!(email: data.email, password: token, password_confirmaion: token, username: data.name)
+      User.create!(email: data.email, password: token, name: data.name)
     end
   end
 
