@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+gem 'activeadmin', github: 'activeadmin'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'rails_db', '~> 2.0', '>= 2.0.3'

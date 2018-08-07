@@ -43,7 +43,11 @@
 <% end %>
 </div>
 
+
 <div><%= link_to('WRITE', new_post_path, class: "btn btn-outline-warning text-white", style: "padding-top: 6px;") %> 
-<%= link_to('NOTICE', new_post_notice_path, class: "btn btn-outline-warning text-white", style: "padding-top: 6px;")%></div>
+<%= link_to('NOTICE', new_post_notice_path, class: "btn btn-outline-warning text-white", style: "padding-top: 6px;")%>
+<% if current_user.try(:admin?) %>
+  <%= link_to('ADMIN', admin_root_path, class: "btn btn-outline-warning text-white", style: "padding-top: 6px;" )%>
+<% end %></div>
 </div>
 
