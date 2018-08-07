@@ -96,6 +96,7 @@
 .nav-item1{
     padding-right: 10px;
 }
+
 .nav-link {
     font-family: 'Nanum Gothic', sans-serif;
     color:white;
@@ -104,8 +105,8 @@
     background-color: rgba(0, 0, 0, 0.9);;
 }
 .index_text {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 20px;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 50px;
     color: white;
@@ -118,7 +119,8 @@
 }
 
 .index_activities_text{
-    margin-top: 50px;
+    margin-top: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .carousel-size{
     height: max(1100px);
@@ -127,19 +129,21 @@
     padding-bottom: 50px;
 }
 .index_activities_col{
-    height:600px;
+    height:450px;
     width:25%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 #cf {
     position:relative;
     margin:0 auto;
   }
 .bottom{
-    height: 600px;
+    height: 450px;
     width: 100%
 }
 .top{
-    height: 600px;
+    height: 450px;
     width: 100%
 }
 .centered {
@@ -179,6 +183,14 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.index_contact_col{
+    width: min(300px);
+}
+
+.contact_final_margin{
+    margin-left: 20px;
+}
+
 
 .text {
     display:table-cell; 
@@ -192,7 +204,6 @@
 .project {
     width: 500px;
     height: 250px;
-    
     margin-top: 50px;
 }
 
@@ -227,7 +238,6 @@ Edit on
 
 .width {
     width: 550px;
-    
     border-radius: 10px;
 }
 .width2{
@@ -247,11 +257,12 @@ Edit on
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
-    
+    font-weight: bold;
     background-size:100% 100%;
     color: white;
     text-align: center;
     display:table;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* flip the pane when hovered */
@@ -309,11 +320,13 @@ Edit on
 
 .memberText {
     margin: 40px 0 0 30px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .memberName {
     margin: 0 0 20px 0;
     font-size: 1.3rem;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .hide {
@@ -380,4 +393,7 @@ div.tab-pane {
 
 .swiper-pagination-bullet-active {
     background: #f6921e !important;
+}
+.line {
+    padding-bottom: 50px;
 }

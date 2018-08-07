@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get "edit_notice/:id" => "posts#edit_notice", as: 'edit_post_notice'
 
   devise_for :users, controllers: {
-    sessions: 'users/sessions'
+    sessions: 'users/sessions',
+    omniauth_callbacks: "users/omniauth_callbacks"
   }
 
   root "home#index"

@@ -1,5 +1,4 @@
 <div class="index">
-   
     <div id="carouselExampleIndicators" class="carousel slide carousel-size" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -8,17 +7,9 @@
         <div class="carousel-inner carousel-size">
             <div class="carousel-item active">
                 <%=image_tag("forindex1.jpg", class: "d-block w-100 h-100")%> 
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>영현입니다</h5>
-                        <p>영현이라구우~~~~~~</p>
-                    </div>
             </div>
             <div class="carousel-item">
                 <%=image_tag("forindex2.jpg", class: "d-block w-100 h-100")%> 
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>영현입니다</h5>
-                        <p>영현이라구우~~~~~~</p>
-                    </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -34,8 +25,23 @@
 
     <div>
         <div>
-            <div class="index_text d-flex justify-content-center align-items-center flex-column">ACTIVITIES</div>
+            <div class="index_text d-flex justify-content-center align-items-center flex-column"><%= link_to activities_path,{style: "color:white;text-decoration:none;", class:"yellow-hover"} do %><strong>ACT<span>I</span>VITIES</strong><% end %></div>
         </div>
+
+<div>
+    <div>
+        <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                <%=image_tag("KakaoTalk_Photo_2018-07-19-19-08-21.png", class: "line")%> 
+                </div>
+                <div class="col">
+                </div>
+        </div>
+    </div>
+</div>
+
         <div>
             <div class="row">
                 <div class="col index_activities_col">
@@ -74,14 +80,27 @@
 
     <div>
         <div>
-            <div class="index_text d-flex justify-content-center align-items-center flex-column">MEMBERS</div>
+            <div class="index_text d-flex justify-content-center align-items-center flex-column"><%= link_to members_path,{style: "color:white;text-decoration:none;", class:"yellow-hover"} do %><strong>ME<span>M</span>BERS</strong><% end %></div>
+        </div>
+
+<div>
+            <div>
+                <div class="row">
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        <%=image_tag("KakaoTalk_Photo_2018-07-19-19-08-21.png", class: "line")%> 
+                        </div>
+                </div>
+            </div>
         </div>
 
         <div class="recruitment-container">
             <div class="row recruitment-container">
                 <div class="col d-flex justify-content-end align-items-end flex-column">
-                    <div class="index_text1">디자이너, 사업가, 개발자, 회계사 등으로 이루어진</div>
-                    <div class="index_text1">열정 넘치는 사람들이 모여 있습니다.</div>
+                    <div class="index_text1" style="font-size:20px;">디자이너, 사업가, 개발자, 회계사 등으로 이루어진</div>
+                    <div class="index_text1" style="font-size:20px;">열정 넘치는 사람들이 모여 있습니다.</div>
+                    <div class="index_text1" style="font-size:20px;">존중과 단합을 통해 시너지 효과를 내는 바람직한 넥스트 문화의 일원들입니다.</div>
                 </div>
                 <div class="col">
                     <div class="card bg-dark text-white recruitment-card">
@@ -99,8 +118,21 @@
 
     <div>
         <div>
-            <div class="index_text d-flex justify-content-center align-items-center flex-column">RECRUITMENT</div>
+            <div class="index_text d-flex justify-content-center align-items-center flex-column"><%= link_to recruit_path ,{style: "color:white;text-decoration:none;", class:"yellow-hover"} do %><strong>REC<span>R</span>UIT</strong><% end %></div>
         </div>
+
+
+<div>
+    <div>
+        <div class="row">
+                <div class="col">
+                <%=image_tag("KakaoTalk_Photo_2018-07-19-19-08-21.png", class: "line")%> 
+                </div>
+                <div class="col">
+                </div>
+        </div>
+    </div>
+</div>
 
         <div class="recruitment-container">
             <div class="row recruitment-container">
@@ -111,9 +143,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col"> 
-                    <div class="index_text1"> 매년 학기 초 리크루팅을 진행합니다.</div>
-                    <div class="index_text1"> 열정 있는 NEXT 2기를 모집 중입니다</div>
+                <div class="col" style="margin-top:90px;"> 
+                    <div class="index_text1" style="font-size:20px;"> 매년 학기 초 리크루팅을 진행합니다.</div>
+                    <div class="index_text1" style="font-size:20px;"> 열정 넘치는 NEXT 2기를 모집 중입니다.</div>
+                    <div class="index_text1" style="font-size:20px;"> 준비해야할 것은 많지 않습니다.</div>
+                    <div class="index_text1" style="font-size:20px;"> 더 많은 정보는 메뉴의 RECRUIT를 참조하세요.</div>
                 </div>
             </div>
         </div>
@@ -121,25 +155,52 @@
 
     <div>
         <div>
-                <div class="index_text d-flex justify-content-center align-items-center flex-column">CONTACT</div>
+                <div class="index_text d-flex justify-content-center align-items-center flex-column"><%= link_to contact_path,{style: "color:white;text-decoration:none;", class:"yellow-hover"} do %><strong>CON<span>T</span>ACT<strong><% end %></div>
         </div>
+
+
+<div>
+    <div>
+        <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                <%=image_tag("KakaoTalk_Photo_2018-07-19-19-08-21.png", class: "line")%> 
+                </div>
+                <div class="col">
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+        
         <div class="index_text1 d-flex justify-content-center align-items-center flex-column">
                 고려대학교 소프트 웨어 벤처 창업 학회 NEXT
         </div>
         <br>
         <div class="index_contact d-flex justify-content-center align-items-center flex-column">
             <div class="row index_text1">
-                <div class="col">
+                <div class="col index_contact_col">
+                 <%=image_tag 'personlogo.png', size: "30x30"%>
                 회장: 안운장
                 </div>
-                <div class="col">
-                next@gmail.com
+                <div class="col index_contact_col">
+                <%=image_tag 'maillogo.png', size: "25x20"%> <span class:"contact_final_margin">next@gmail.com</span>
                 </div>
-                <div class="col">
-                facebook.com/kulikelion
+                <div class="col index_contact_col">
+                <%=image_tag 'facebooklogo.png', size: "20x20"%> <span class:"contact_final_margin">facebook.com/kulikelion</span>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
+<script>
+$(".yellow-hover").hover(function(e) {
+    $(e.target).find("span").attr("style", "color:rgb(246,222,61)");
+}, function(e) {
+    $(e.target).find("span").removeAttr("style");
+});
+</script>

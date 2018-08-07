@@ -7,6 +7,8 @@ end
 
 
 gem 'activeadmin', github: 'activeadmin'
+gem 'omniauth-facebook'
+gem 'figaro'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'rails_db', '~> 2.0', '>= 2.0.3'
